@@ -107,28 +107,28 @@ public class PathView extends View {
 
     public void setPaintColor(int paintColor) {
         switch (paintColor){
-                case 1:
+                case 0:
                     mCurrentPathType= PointPath.PathType.PEN_1;
                     break;
-                case 2:
+                case 1:
                     mCurrentPathType= PointPath.PathType.PEN_2;
                     break;
-                case 3:
+                case 2:
                     mCurrentPathType= PointPath.PathType.PEN_3;
                     break;
-                case 4:
+                case 3:
                     mCurrentPathType= PointPath.PathType.PEN_4;
                     break;
-                case 5:
+                case 4:
                     mCurrentPathType= PointPath.PathType.PEN_5;
                     break;
-                case 6:
+                case 5:
                     mCurrentPathType= PointPath.PathType.PEN_6;
                     break;
-                case 7:
+                case 6:
                     mCurrentPathType= PointPath.PathType.PEN_7;
                     break;
-                case 8:
+                case 7:
                     mCurrentPathType= PointPath.PathType.PEN_8;
                     break;
                 default:

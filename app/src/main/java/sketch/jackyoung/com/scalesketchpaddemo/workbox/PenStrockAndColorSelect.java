@@ -121,7 +121,7 @@ public class PenStrockAndColorSelect extends RelativeLayout {
 
         // Cancel button.
         Button btnCancel = new Button(context);
-        btnCancel.setText(this.getResources().getText(R.string.selectcolor_cancel));
+        btnCancel.setText("cancel");
         btnCancel.setId(CANCEL_BUTTON_ID);
         btnCancel.setTextSize(8);
         btnCancel.setOnClickListener(m_clickListener);
