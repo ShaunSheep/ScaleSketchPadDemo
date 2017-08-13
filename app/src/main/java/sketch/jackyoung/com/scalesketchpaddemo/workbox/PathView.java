@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.PointF;
 import android.graphics.PorterDuff;
@@ -26,7 +27,9 @@ public class PathView extends View {
     private  int mPointWidth;
     private  Canvas tempCanvas=null;
     private Bitmap mBitmap=null;
+    private Bitmap mBgBitmap=null;
     private Paint mPaint=null;
+    private  float bitmapFactor;
 
     public PathView(Context context) {
         super(context);
@@ -41,11 +44,14 @@ public class PathView extends View {
         mBitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
         tempCanvas = new Canvas(mBitmap);
         mPaint=new Paint();
-    }
 
+
+
+    }
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
         //PorterDuff is very important
         tempCanvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
 
@@ -60,8 +66,38 @@ public class PathView extends View {
                 mCurrentPath.disPlayPath(tempCanvas);
             }
 
+            if(mBgBitmap!=null) {
+                //contral bitmap border in canvas
+                setImageBorder();
+
+                Matrix matrix=new Matrix();
+                matrix.postScale(bitmapFactor,bitmapFactor);
+                canvas.drawBitmap(mBgBitmap, matrix, mPaint);
+            }
+
             canvas.drawBitmap(mBitmap,0,0,mPaint);
 
+    }
+
+    private void setImageBorder() {
+        float bitmapWidth=(float)mBgBitmap.getWidth();
+        float bitmapHeight=(float)mBgBitmap.getHeight();
+
+        if (bitmapWidth > bitmapHeight) {
+            if(bitmapWidth>getWidth()){
+                bitmapFactor=bitmapWidth/getWidth();
+            }else {
+                bitmapFactor=getWidth()/bitmapHeight;
+            }
+
+        } else {
+            if(bitmapHeight>getHeight()){
+                bitmapFactor=bitmapHeight/getHeight();
+            }else {
+                bitmapFactor=getHeight()/bitmapHeight;
+            }
+
+        }
     }
 
     @Override
@@ -148,5 +184,10 @@ public class PathView extends View {
         //why not refresh
         invalidate();
 
+    }
+
+
+    public void addBackgroudImage(Bitmap resultBimtap) {
+        mBgBitmap=resultBimtap;
     }
 }
