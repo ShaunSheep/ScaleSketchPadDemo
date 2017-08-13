@@ -68,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
         penStrockAndColorSelect.setCallback(new PenStrockAndColorSelect.ColorSelectorCallback() {
             @Override
             public void onColorSelectCancel(PenStrockAndColorSelect sender) {
-
+                penStrockAndColorSelect.setVisibility(View.GONE);
+                linearLayout.setVisibility(View.VISIBLE);
             }
 
             @Override
@@ -92,7 +93,8 @@ public class MainActivity extends AppCompatActivity {
         penStrockAndColorSelect.setCallback(new PenStrockAndColorSelect.ColorSelectorCallback() {
             @Override
             public void onColorSelectCancel(PenStrockAndColorSelect sender) {
-
+                penStrockAndColorSelect.setVisibility(View.GONE);
+                linearLayout.setVisibility(View.VISIBLE);
             }
 
             @Override
