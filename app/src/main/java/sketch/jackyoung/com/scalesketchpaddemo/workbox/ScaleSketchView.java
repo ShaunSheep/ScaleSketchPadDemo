@@ -1,7 +1,6 @@
 package sketch.jackyoung.com.scalesketchpaddemo.workbox;
 
 import android.content.Context;
-import android.graphics.Canvas;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
@@ -15,10 +14,18 @@ import android.widget.RelativeLayout;
 
 public class ScaleSketchView extends RelativeLayout {
 
+
+
     public ScaleSketchView(Context context) {
         super(context);
+
     }
 
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -29,8 +36,6 @@ public class ScaleSketchView extends RelativeLayout {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-
-
     }
 
 
