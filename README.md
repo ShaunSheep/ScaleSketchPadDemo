@@ -1,4 +1,4 @@
-# ScaleSketchPadDemo
+# ScaleSketchPadDemo | <a href="https://raw.githubusercontent.com/ShaunSheep/ScaleSketchPadDemo/master/screenphoto/README_CHI.md">中文版</a>
 
 include tow app moudles
 
