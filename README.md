@@ -16,3 +16,6 @@ one is can  not  scale ,another can scale so that  learning convenient
 
 ### change path stroke
 ![](https://raw.githubusercontent.com/ShaunSheep/ScaleSketchPadDemo/master/stroke.png)
+
+### add photo
+ <img src="https://raw.githubusercontent.com/ShaunSheep/ScaleSketchPadDemo/master/addphoto.png" width = "360" height = "640" alt="draw path" align=center />
