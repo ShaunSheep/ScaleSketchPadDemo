@@ -6,6 +6,14 @@
 
 方便各位Android 开发者理解和使用
 
+用法：
+
+进入项目根目录：https://github.com/ShaunSheep/ScaleSketchPadDemo
+
+clone or download   项目到本地，
+
+打开Android Studio—>file—>new—>import new moudle—>选中本地的app或aap2
+
 # 普通绘画板
 
 有五大功能：
