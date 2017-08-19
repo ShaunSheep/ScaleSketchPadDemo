@@ -29,7 +29,7 @@ public class PathView extends View {
     private Bitmap mBitmap=null;
     private Bitmap mBgBitmap=null;
     private Paint mPaint=null;
-    private  float bitmapFactor;
+    private  float dstImageWidth,dstImageHeight,bitmapFactor,dx,dy;
 
     public PathView(Context context) {
         super(context);
@@ -83,20 +83,18 @@ public class PathView extends View {
         float bitmapWidth=(float)mBgBitmap.getWidth();
         float bitmapHeight=(float)mBgBitmap.getHeight();
 
-        if (bitmapWidth > bitmapHeight) {
-            if(bitmapWidth>getWidth()){
-                bitmapFactor=bitmapWidth/getWidth();
-            }else {
-                bitmapFactor=getWidth()/bitmapHeight;
-            }
-
-        } else {
-            if(bitmapHeight>getHeight()){
-                bitmapFactor=bitmapHeight/getHeight();
-            }else {
-                bitmapFactor=getHeight()/bitmapHeight;
-            }
-
+        if (bitmapWidth > bitmapHeight&&bitmapWidth==bitmapWidth) {
+            dstImageWidth=getWidth()-2;
+            dstImageHeight=bitmapHeight/bitmapWidth*dstImageWidth;
+            bitmapFactor=dstImageHeight/dstImageWidth;
+            dy=(getHeight()-(bitmapHeight*bitmapFactor))/2;
+            dx=(getWidth()-(bitmapWidth*bitmapFactor))/2;
+        }else{
+            dstImageHeight=getHeight()-2;
+            dstImageWidth=bitmapWidth/bitmapHeight*dstImageHeight;
+            bitmapFactor=dstImageWidth/dstImageHeight;
+            dy=(getHeight()-(bitmapHeight*bitmapFactor))/2;
+            dx=(getWidth()-(bitmapWidth*bitmapFactor))/2;
         }
     }
 
