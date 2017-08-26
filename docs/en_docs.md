@@ -11,16 +11,16 @@ Notice : Pathview not have draw function ，PointPath have
 
  <img src="drawpath_meitu_1.jpg" width = "640" height = "340" alt="draw path" align=center id="rotate "/>
 
-   one touch entent log：
-     action test: finger down
-     action test: finger move
-     action test: finger move
-     action test: finger move
-     action test: finger move
-     action test: finger move
-     action test: finger move
-     action test: finger move
-     action test: finger up
+       one touch entent log：
+      action test: finger down
+      action test: finger move
+      action test: finger move
+      action test: finger move
+      action test: finger move
+      action test: finger move
+      action test: finger move
+      action test: finger move
+      action test: finger up
 
 
 # Design
