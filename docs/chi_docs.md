@@ -54,3 +54,6 @@ PathView  是PointPath的控制类,继承自View：
 2. 橡皮擦功能
     1. Paint.setXformode()属性，本质就是同一个位置，两个点进行集合运算
     2. onDraw()中需要新建临时canvas，临时Bitmap
+    
+    
+

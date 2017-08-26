@@ -3,6 +3,7 @@ package sketchpad.jackyoung.com.scalesketchpaddemo3.workbox;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.PointF;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
@@ -47,6 +48,7 @@ public class ScaleSketchView extends RelativeLayout {
                 isTranslate=true;
                 mOldDistance = TouchEventUtil.spacingOfTwoFinger(ev);
                 mOldPointer = TouchEventUtil.middleOfTwoFinger(ev);
+                Log.i("action test","scale view action_pointer_down");
                 break;
             case  MotionEvent.ACTION_MOVE:
                 if(!isTranslate)return  pathView.onTouchEvent(ev);
@@ -63,9 +65,9 @@ public class ScaleSketchView extends RelativeLayout {
                     pathView.setY(pathView.getY() + newPointer.y - mOldPointer.y);
                     mOldPointer = newPointer;
                     checkingBorder();
+                    Log.i("action test","scale view action_move");
 
                 }
-
             case MotionEvent.ACTION_POINTER_UP:
                 break;
             case MotionEvent.ACTION_UP:
@@ -73,6 +75,7 @@ public class ScaleSketchView extends RelativeLayout {
                 pathView.getMatrix().getValues(mMatrixValus);
                 pathView.setScaleAndOffset(pathView.getScaleX(), mMatrixValus[2], mMatrixValus[5]);
                 isTranslate = false;
+                Log.i("action test","scale view action_up");
                 break;
         }
 
