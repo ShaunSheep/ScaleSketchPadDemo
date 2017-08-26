@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ScaleSketchPadDemo</string>
+    <string name="app_name">NormalSketchPadDemo</string>
     <string name="selectcolor_cancel">cancel</string>
     <string name="action_settings">add photo</string>
     <string name="action_settings2">about me</string>
