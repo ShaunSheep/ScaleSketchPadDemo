@@ -3,34 +3,30 @@
 
 Notice : Pathview not have draw function ，PointPath have
 
-pathview doc，讲解pathview的事件处理
-
+![](https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/pathviewdoc.png)
 
 
 # Basis ：
 
-View具有onTouchEvent(Motionevent event)函数，可以接收触摸事件
 
-图，描述用户一次触摸滑动的过程，系统产生event的情况；打印log，画图无穷小的点
+ <img src="drawpath_meitu_1.jpg" width = "640" height = "340" alt="draw path" align=center id="rotate "/>
 
-
-action test: finger down
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger up
+   one touch entent log：
+     action test: finger down
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger up
 
 
 # Design
 
-Uml图
 
-
-
+![](https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/uml.png)
 
 PointPath have drawn function：
 1. save point state
