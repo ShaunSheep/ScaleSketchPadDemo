@@ -14,8 +14,12 @@ View具有onTouchEvent(Motionevent event)函数，可以接收触摸事件
 图，描述用户一次触摸滑动的过程，系统产生event的情况；打印log，画图无穷小的点
 
 
-
- <img src="https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/drawpath.jpeg" width = "360" height = "640" alt="draw path" align=center />
+#rotate {
+    width: 300.11px;
+    height: 200px;
+    transform: rotate(-90deg) translate(-50px,-50px) ;
+}
+ <img src="https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/drawpath.jpeg" width = "360" height = "640" alt="draw path" align=center id="rotate "/>
 
  action test: finger down
  action test: finger move
