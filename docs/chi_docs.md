@@ -1,11 +1,11 @@
 
 # 绘画板原理：
 
-notice: pathview 没有绘制的能力，具备绘制能力的是PointPath
+注意: athview 没有绘制的能力，具备绘制能力的是PointPath
 
- pathview doc，讲解pathview的事件处理
+这张图说明了：事件传递的过程、处理事件的方式
 
-
+![](https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/patchviewdoc_chi.png)
 
 # 基本知识：
 
@@ -14,20 +14,20 @@ View具有onTouchEvent(Motionevent event)函数，可以接收触摸事件
 图，描述用户一次触摸滑动的过程，系统产生event的情况；打印log，画图无穷小的点
 
 
-action test: finger down
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger move
-action test: finger up
+ action test: finger down
+ action test: finger move
+ action test: finger move
+ action test: finger move
+ action test: finger move
+ action test: finger move
+ action test: finger move
+ action test: finger move
+ action test: finger up
 
 
 # 实现思路
 
-Uml图
+![](https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/uml.png
 
 PointPath 是实际具有绘画能力的类：
 1. 存储点的状态（橡皮、普通点、粗细、颜色）
