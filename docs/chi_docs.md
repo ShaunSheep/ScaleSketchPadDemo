@@ -14,6 +14,9 @@ View具有onTouchEvent(Motionevent event)函数，可以接收触摸事件
 图，描述用户一次触摸滑动的过程，系统产生event的情况；打印log，画图无穷小的点
 
 
+
+ <img src="https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/drawpath.jpeg" width = "360" height = "640" alt="draw path" align=center />
+
  action test: finger down
  action test: finger move
  action test: finger move
@@ -27,7 +30,7 @@ View具有onTouchEvent(Motionevent event)函数，可以接收触摸事件
 
 # 实现思路
 
-![](https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/uml.png
+![](https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/uml.png)
 
 PointPath 是实际具有绘画能力的类：
 1. 存储点的状态（橡皮、普通点、粗细、颜色）
