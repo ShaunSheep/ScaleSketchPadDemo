@@ -18,15 +18,17 @@ View具有onTouchEvent(Motionevent event)函数，可以接收触摸事件
 
  <img src="drawpath_meitu_1.jpg" width = "640" height = "340" alt="draw path" align=center id="rotate "/>
 
- action test: finger down
- action test: finger move
- action test: finger move
- action test: finger move
- action test: finger move
- action test: finger move
- action test: finger move
- action test: finger move
- action test: finger up
+    一次 touch event log：
+    
+     action test: finger down
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger move
+     action test: finger up
 
 
 # 实现思路
