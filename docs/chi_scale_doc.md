@@ -18,12 +18,13 @@
     
 插入图片：缩放图原理
    
-   
+  
+   ![]( https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/scaledoc.png)
    
 ## 基本知识
     1. view 的缩放属性，平移属性
     2. UMl图，viewgroup和子view的事件传递
-    
+    ![]( https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/sacleuml.png)
     
 ## 难点
 
