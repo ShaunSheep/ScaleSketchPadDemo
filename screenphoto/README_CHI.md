@@ -65,7 +65,7 @@ View具有onTouchEvent(Motionevent event)函数，可以接收触摸事件
 图，描述用户一次触摸滑动的过程，系统产生event的情况；打印log，画图无穷小的点
 
 
- <img src="drawpath_meitu_1.jpg" width = "640" height = "340" alt="draw path" align=center id="rotate "/>
+ <img src="https://github.com/ShaunSheep/ScaleSketchPadDemo/blob/master/docs/drawpath_meitu_1.jpg" width = "640" height = "340" alt="draw path" align=center id="rotate "/>
 
     一次 touch event log：
     
